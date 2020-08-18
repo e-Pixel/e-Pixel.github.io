@@ -1,3 +1,37 @@
 body {
-	background-color:#212F3D;
+	background-color: #212F3D;
+	font-family: Lato, Arial;
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15em;
+}
+
+#math {
+	color:#FF5722;
+} 
+#quimica {
+	color:#FF9800;
+} 
+#write {
+	color:#FFEB3B;
+} 
+#history {
+	color:#8BC34A;
+} 
+#habi {
+	color:#2196F3;
+} 
+#lab {
+	color:#AB47BC;
+} 
+/*
+#lab::selection {
+	b
+} */
+::selection {;
+	background:#F39C12;
+}
+a:visited {
+	color: white; 
 }
