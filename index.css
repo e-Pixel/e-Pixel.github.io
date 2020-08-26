@@ -42,10 +42,6 @@ h3 {
 #lab {
 	color:#AB47BC;
 } 
-/*
-#lab::selection {
-	b
-} */
 ::selection {;
 	background:#F39C12;
 	color: white; 
