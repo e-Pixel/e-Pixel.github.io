@@ -86,3 +86,7 @@ a:visited {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #2196F3;}
+
+.vis {
+	/* This is to mark classes that we've already had*/
+}
