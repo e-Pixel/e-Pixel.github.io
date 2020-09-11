@@ -42,7 +42,7 @@ h3 {
 #lab {
 	color:#AB47BC;
 } 
-::selection {;
+::selection {
 	background:#F39C12;
 	color: white; 
 }
@@ -89,4 +89,5 @@ a:visited {
 
 .vis {
 	/* This is to mark classes that we've already had*/
+	color: black;
 }
