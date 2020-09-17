@@ -1,3 +1,0 @@
-/script
-/index.sublime-workspace
-/script.js
