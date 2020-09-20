@@ -28,7 +28,9 @@ h3 {
 	font-size:10px;
 	color: white;
 }
-
+#english {
+	color: #fefefe;
+}
 #math {
 	color:#FF5722;
 } 
