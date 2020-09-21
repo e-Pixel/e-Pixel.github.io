@@ -2,21 +2,15 @@ var testToday = new Date();
 var tstDay = testToday.getDay();
 console.log(tstDay);
 
-function changeVisibilityById(currentDay) {
-  var image = document.getElementById("anun");
-  if (currentDay == 0 || currentDay == 6) {
-    image.style.visibility = "visible";
-  } else {
-    image.style.visibility = "hidden";
-  }
-}
-
 function messageOnlyWeekends() {
   var today = new Date();
   let day = today.getDay();
+  var image = document.getElementById("anun");
   if (day == 0 || day == 6) {
     console.log("¡Feliz fin de semana! :D");
-    changeVisibilityById(day);
+    image.style.visibility = "visible";
+  } else {
+    image.style.visibility = "hidden";
   }
 }
 messageOnlyWeekends();
