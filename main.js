@@ -6,7 +6,7 @@ function messageOnlyWeekends() {
   var today = new Date();
   let day = today.getDay();
   var image = document.getElementById("anun");
-  if (day == 0 || day == 6) {
+  if (day == 0 || day == 6 || day == 5) {
     console.log("¡Feliz fin de semana! :D");
     image.style.visibility = "visible";
   } else {
