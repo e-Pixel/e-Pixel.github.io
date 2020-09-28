@@ -14,32 +14,6 @@ function messageOnlyWeekends() {
   }
 }
 
-/*
-
-visitor = 0; 
-function countVisits() {
-
-} 
-
-*/
-
-function manualMultiplication(x,y) { 
-  let counter = 0; 
-  for (x < y; x++) { // uhhh 
-    counter += x; 
-  }
-  return counter;
-}
-
-console.log(manualMultiplication(4,5));
-
-
-function moveEverythingElse(text) {
-  for (var i = 0; i < text.lenght; i++) {
-    console.log(text[i]);
-  }
-  // will loop through each element of the list
-}
 messageOnlyWeekends();
 console.log(testToday.getMonth());
 /*
