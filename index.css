@@ -20,9 +20,13 @@ body {
 	width: 23em;
 } 
 
-#anun {
-	color: #F78E69;
+/* ANUNCIOS PRE-LINKS*/
+
+.prelinks { 
+	color: #F78369;
 }
+
+/* LINKS */
 
 h3 {
 	color: white;
