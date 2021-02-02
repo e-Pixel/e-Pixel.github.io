@@ -2,14 +2,6 @@ var testToday = new Date();
 var tstDay = testToday.getDay();
 console.log(tstDay);
 
-// This is just a comment 
-// Not to be taken seriously
-
-var hoy = new Date(); 
-if (hoy.getDay == 25 && hoy.getMonth == 6) { 
-  console.log("¡Feliz Navidad! :D");
-} 
-
 function messageOnlyWeekends() {
   var today = new Date();
   let day = today.getDay();
