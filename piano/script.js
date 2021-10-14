@@ -2,11 +2,25 @@ console.log("omg")
 var x = 0; 
 
 // setting up variables // 
-var roblox = new Audio('sounds/robloxOof.mp3');
+var roblox = 'sounds/robloxOof.mp3';
+let getVolume = document.querySelector("#volume-control");
 
-function playSoundAsync(url){
-    new Audio(url).play();
+function setVolume(audio) { 
+    
+    
+    getVolume.addEventListener("change", function(e) {
+        audio.volume = e.currentTarget.value / 100;
+    })
+    return audio.volume; 
 }
+
+function pog() {
+    var audioNuevo = new Audio(roblox);
+    audioNuevo.volume = setVolume(audioNuevo)
+
+    audioNuevo.play();
+}
+
 
 async function presionar_tecla() { 
     tecla_esq = event.keyCode;
@@ -21,7 +35,8 @@ async function presionar_tecla() {
         setTimeout(() => { console.log("champ");}, 2000)
     }
     if (tecla_esq == 81) { // it's q 
-        playSoundAsync('sounds/robloxOof.mp3');
+        pog();
+
     } 
 }
 
