@@ -7,7 +7,6 @@ let getVolume = document.querySelector("#volume-control");
 
 function playSound(sonido) {
     var audioNuevo = new Audio(sonido);
-    audioNuevo.volume = setVolume(audioNuevo)
     audioNuevo.play();
 }
 
