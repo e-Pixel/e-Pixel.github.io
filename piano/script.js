@@ -3,9 +3,7 @@ console.log("This website works... sort of")
 // setting up variables // 
 var robloxMP3 = 'sounds/robloxOof.mp3';
 var noteDo = 'sounds/do.mp3';
-var nodeRe = 'sounds/re.mp3';
-
-
+var noteRe = 'sounds/re.mp3';
 let getVolume = document.querySelector("#volume-control");
 
 function sleep (time) {
@@ -26,11 +24,13 @@ function isPlaying(audiolem){
 
 function playSound(sonido) {
     var audioNuevo = new Audio(sonido);
-    audioNuevo.play();
-
+    
     audioNuevo.onloadedmetadata = function() {
         console.log(audioNuevo.duration);
+        // set volume ?? 
     }
+    audioNuevo.play();
+
 }
 
 var x = 0; 
@@ -56,8 +56,11 @@ async function presionar_tecla() { // must be async or it wont work (too much la
         playSound(robloxMP3);
         testingVariables();
     } 
-    if (tecla_esq == 69) { // its e
-
+    if (tecla_esq == 70) { // F
+        playSound(noteDo);
+    }
+    if (tecla_esq == 71) { // G
+        playSound(noteRe);
     }
 }
 
