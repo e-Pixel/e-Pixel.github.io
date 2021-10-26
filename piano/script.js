@@ -50,16 +50,15 @@ function testingVariables() {
 async function presionar_tecla() { // must be async or it wont work (too much lag w/ sync) 
     tecla_esq = event.keyCode;
     
-    // keycode.info
-    if (tecla_esq == 81) { // it's q 
-
+    switch (String.fromCharCode(tecla_esq)) {
+    case "Q":
         playSound(robloxMP3);
         testingVariables();
-    } 
-    if (tecla_esq == 70) { // F
+        break;
+    case "F":
         playSound(noteDo);
-    }
-    if (tecla_esq == 71) { // G
+        break;
+    case "G":
         playSound(noteRe);
     }
 }
