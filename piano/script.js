@@ -8,6 +8,9 @@ var noteMi = 'sounds/mi.mp3';
 var noteFa = 'sounds/fa.mp3';
 
 let getVolume = document.querySelector("#volume-control");
+document.body.style.zoom = 0.7
+
+
 
 function sleep (time) {
     return new Promise((resolve) => setTimeout(resolve, time));
