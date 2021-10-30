@@ -7,6 +7,10 @@ img {
     margin-right: auto;
     display: block;
 }
+#whoTalks {
+    width: 33em;
+}
+
 #logo {
     width: 34em;
     height: 16%;
