@@ -58,10 +58,6 @@ async function presionar_tecla() { // must be async or it wont work (too much la
     tecla_esq = event.keyCode;
     
     switch (String.fromCharCode(tecla_esq)) {
-    case "Q":
-        playSound(robloxMP3);
-        replaceImage("media/a.png", "whoTalks");
-        break;
     case "F":
         playSound(noteDo);
         replaceImage("media/wolf.png", "whoTalks");

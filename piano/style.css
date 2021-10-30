@@ -2,13 +2,13 @@ body {
     background-color:#252525;
 }
 img {
-    width: 31em;
+    width: 15em;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 #logo {
-    width: 34em;
+    width: 32em;
     height: 16%;
 }
 .containerDiv { 
