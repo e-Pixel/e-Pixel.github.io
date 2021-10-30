@@ -4,6 +4,9 @@ console.log("This website works... sort of")
 var robloxMP3 = 'sounds/robloxOof.mp3';
 var noteDo = 'sounds/do.mp3';
 var noteRe = 'sounds/re.mp3';
+var noteMi = 'sounds/mi.mp3';
+var noteFa = 'sounds/fa.mp3';
+
 let getVolume = document.querySelector("#volume-control");
 
 function sleep (time) {
@@ -47,20 +50,40 @@ function testingVariables() {
     }
 }
 
+function replaceImage(imgDirectory, identification) {
+    document.getElementById(identification).src = imgDirectory;
+}
+
 async function presionar_tecla() { // must be async or it wont work (too much lag w/ sync) 
     tecla_esq = event.keyCode;
     
     switch (String.fromCharCode(tecla_esq)) {
     case "Q":
         playSound(robloxMP3);
-        testingVariables();
+        replaceImage("media/a.png", "whoTalks");
         break;
     case "F":
         playSound(noteDo);
+        replaceImage("media/wolf.png", "whoTalks");
+        replaceImage("media/F.png", "tecla")
         break;
     case "G":
         playSound(noteRe);
+        replaceImage("media/witch.png", "whoTalks");
+        replaceImage("media/G.png", "tecla")
+        break;
+    case "H":
+        playSound(noteMi);
+        replaceImage("media/psycho.png", "whoTalks");
+        replaceImage("media/H.png", "tecla")
+        break;
+    case "J":
+        playSound(noteFa);
+        replaceImage("media/devil.png", "whoTalks");
+        replaceImage("media/J.png", "tecla")
+        break;
     }
+    
 }
 
 window.onkeydown = presionar_tecla;
