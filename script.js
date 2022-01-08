@@ -72,6 +72,17 @@ function expandCourseCode(courseCode) {
 	}
 }
 
+
+const emergencyLinks = {
+  'Matter and energy II': "link1",
+  'Human body care':'link2',
+  'Expresión Musical':'link3',
+  'Habilidades y valores V':'link4',
+  'Cálculo diferencial':'mateLink',
+  'Inglés X':'link6'
+}
+
+
 /**
  * Procedure to initialize the event listener on the Zoom link buttons.
  * 
@@ -95,8 +106,9 @@ function initializeClassButtons(className) {
           case e.message.startsWith('Unable to parse JSON in response'):
             alert(`La comunicación con el servidor de Canvas ha tenido un error.\n\nMateria pedida: ${courseTitle}.`);
             break;
-          case e.message.startsWith('No calendar events for course'):
-            alert(`Ningún enlace de Zoom fue encontrado para ${courseTitle} hoy.`);
+          case e.message.startsWith('No calendar events for course'): 
+            alert(`Ningún enlace de Zoom fue encontrado para ${courseTitle} hoy. \n\n Intenta con ${emergencyLinks[courseTitle]}`);
+            console.log(emergencyLinks[courseTitle])
             break;
           case e.message.startsWith('Invalid response for calendar events retrieval'):
             alert(`Ha ocurrido un error interno.\n\nMateria pedida: ${courseTitle}.`);
