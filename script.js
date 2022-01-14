@@ -55,18 +55,18 @@ async function zoomlinkForToday(group, courseId) {
  */
 function expandCourseCode(courseCode) {
   switch (courseCode) {
-	case 'fisica':
-	  return 'Matter and energy II';
-	case 'cuerpo_humano':
-		return 'Human body care';
-	case 'musica':
-		return 'Expresión musical';
-	case 'habilidades':
-		return 'Habilidades y valores V';
-	case 'calculo':
-		return 'Cálculo diferencial';
-	case 'ingles':
-		return 'Inglés X';
+	case 'sem6_art_and_culture':
+	  return 'Art and culture';
+	case 'sem6_calculus':
+		return 'Cálculo integral';
+	case 'sem6_habilidades':
+		return 'Habilidades y valores VI';
+	case 'sem6_mexico':
+		return 'México en el siglo XXI';
+	case 'sem6_philosophy':
+		return 'Pensamiento filosófico';
+	case 'sem6_science':
+		return 'Scientific thought';
 	default:
 		throw new Error(`Invalid course code for expansion to title: ${courseCode}`);
 	}
@@ -74,12 +74,12 @@ function expandCourseCode(courseCode) {
 
 
 const emergencyLinks = {
-  'Matter and energy II': "link1",
-  'Human body care':'link2',
-  'Expresión Musical':'link3',
-  'Habilidades y valores V':'link4',
-  'Cálculo diferencial':'mateLink',
-  'Inglés X':'link6'
+  'Art and culture': "link1",
+  'Cálculo integral':'link2',
+  'Habilidades y valores VI':'link3',
+  'México en el siglo XXI':'link4',
+  'Pensamiento filosófico':'mateLink',
+  'Scientific thought':'link6'
 }
 
 
