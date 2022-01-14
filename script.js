@@ -79,7 +79,7 @@ const emergencyLinks = {
   'Habilidades y valores VI':'link3',
   'México en el siglo XXI':'link4',
   'Pensamiento filosófico':'mateLink',
-  'Scientific thought':'link6'
+  'Scientific thought':'https://itesm.zoom.us/j/87168417185'
 }
 
 

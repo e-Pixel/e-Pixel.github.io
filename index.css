@@ -40,8 +40,8 @@ body {
 
 /* ANUNCIOS PRE-LINKS*/
 
-.prelinks { 
-	color: #F78369;
+h2 { /*For subtitle ("Feliz Fin de Semana")*/
+	color: #fd5285;
 }
 
 /* LINKS */
@@ -55,7 +55,7 @@ h3 {
 	color: white;
 }
 ::selection {
-	background:#e2a542;
+	background:#0f4c81;
 	color: white; 
 }
 a:visited {
