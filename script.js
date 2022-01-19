@@ -12,6 +12,20 @@ function get(url) {
   });
 }
 
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+ }
+
+function closeButton() { 
+  let buttonStructure = document.getElementsByClassName("rcorners1");
+  let button = document.getElementById("button");
+  buttonStructure.style.opacity = "0";
+  button.style.opacity = "0";
+
+  document.getElementById("rcorners1").style.opacity = "0";
+  console.log("pog")
+}
+
 /**
  * Lists Zoom links for today for a given course.
  *
@@ -74,20 +88,60 @@ function expandCourseCode(courseCode) {
 
 
 const emergencyLinks = {
-  'Art and culture': "link1",
-  'Cálculo integral':'link2',
-  'Habilidades y valores VI':'link3',
-  'México en el siglo XXI':'link4',
-  'Pensamiento filosófico':'mateLink',
+  'Art and culture': "https://itesm.zoom.us/j/6366890099",
+  'Cálculo integral':alternativeLinks("calculo"), // Testing alternativeLinks() for later usage
+  'Habilidades y valores VI':alternativeLinks("habilidades"),
+  'México en el siglo XXI':'https://tecmilenio.zoom.us/j/81851303071',
+  'Pensamiento filosófico':'https://us02web.zoom.us/j/89245565159',
   'Scientific thought':'https://itesm.zoom.us/j/87168417185'
 }
 
+function alternativeLinks(subject) {
+  baseLink = "https://tecmilenio.zoom.us/j/";
+  today = new Date().getDay(); 
+
+  switch (subject) {
+    case "calculo":
+        if (today == 2) { // tuesday
+          return (baseLink + "85729129549")
+        }
+        return (baseLink + "83093002223")
+        break; 
+      
+    case "habilidades" :
+        if (today == 3) { // wednesday
+          return (baseLink + "83383020209")
+        }
+        return (baseLink + "86867178711")
+      }
+}
+
+
+
+/*
+  baseLink = "https://tecmilenio.zoom.us/j/";
+  today = new Date().getDay(); 
+  if (subject == "calculo" ) { 
+    if (today == 2) { // if tuesday 
+      return (baseLink + "85729129549");
+    }
+    return (baseLink + "83093002223"); 
+  }
+}
+  if (subject == "habilidades" && new Date().getDay() == 3) {
+    if (today == 3) {
+    return (baseLink + "83383020209")
+    }
+  }
+
+*/
 
 /**
  * Procedure to initialize the event listener on the Zoom link buttons.
  * 
  * @param {string} className The name of the class for the Zoom link buttons. 
  */
+
 function initializeClassButtons(className) {
   const list = document.querySelectorAll(`.${className}`);
 
@@ -107,8 +161,9 @@ function initializeClassButtons(className) {
             alert(`La comunicación con el servidor de Canvas ha tenido un error.\n\nMateria pedida: ${courseTitle}.`);
             break;
           case e.message.startsWith('No calendar events for course'): 
-            alert(`Ningún enlace de Zoom fue encontrado para ${courseTitle} hoy. \n\n Intenta con ${emergencyLinks[courseTitle]}`);
-            console.log(emergencyLinks[courseTitle])
+            alert(`Ningún enlace de Zoom fue encontrado para ${courseTitle} hoy. \n\n Se intentará con el link de emergencia: \n\n ${emergencyLinks[courseTitle]}`);
+            console.log("Emergency link deployed " + emergencyLinks[courseTitle] )
+            window.open(emergencyLinks[courseTitle])
             break;
           case e.message.startsWith('Invalid response for calendar events retrieval'):
             alert(`Ha ocurrido un error interno.\n\nMateria pedida: ${courseTitle}.`);

@@ -63,6 +63,46 @@ a:visited {
 	color: white; 
 }
 
+#okayButton {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	margin: auto;
+  }
+
+.rcorners1 {
+	border-radius: 25px;
+	background: #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+	margin: auto; 
+  }
+
+/* #aviso {
+	display: block;
+	border-radius: 25px;
+	background: #73AD21;
+	padding: 20px; 
+	width: 200px;
+	height: 150px; 
+	margin: 0 auto;
+}
+
+#okayButton { 
+	margin: 0;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+} */
+
  /* Dropdown Button */
  .dropbtn {
 	background-color: #AB47BC;
