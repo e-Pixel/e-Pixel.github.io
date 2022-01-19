@@ -106,14 +106,20 @@ function alternativeLinks(subject) {
           return (baseLink + "85729129549")
         }
         return (baseLink + "83093002223")
-        break; 
-      
+
     case "habilidades" :
         if (today == 3) { // wednesday
           return (baseLink + "83383020209")
         }
         return (baseLink + "86867178711")
-      }
+      
+        
+    case "scientific":
+        if (today == 3) {
+          return (baseLink + "81032993327")
+        }
+        return (baseLink + "89838452310") 
+  }
 }
 
 
