@@ -170,7 +170,6 @@ function initializeClassButtons(className) {
             alert(`Ningún enlace de Zoom fue encontrado para ${courseTitle} hoy. \n\n Se intentará con el link de emergencia: \n\n ${emergencyLinks[courseTitle]}`);
             console.log("Emergency link deployed " + emergencyLinks[courseTitle] )
             const loading = document.getElementById("loading");
-            loading.style.display = 'none';
             window.open(emergencyLinks[courseTitle])
             break;
           case e.message.startsWith('Invalid response for calendar events retrieval'):
