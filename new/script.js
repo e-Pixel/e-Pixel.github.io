@@ -13,7 +13,6 @@ function get(url) {
 }
 
 function openInNewTab(url) {
-  console.log("Opening new tab...")
   window.open(url, '_blank').focus();
  }
 
@@ -88,7 +87,7 @@ function expandCourseCode(courseCode) {
 }
 
 
-const emergencyLinks = { // This dict is used in case there is no event (zoom link) found in canvas calendar 
+const emergencyLinks = {
   'Art and culture': "https://itesm.zoom.us/j/6366890099",
   'Cálculo integral':alternativeLinks("calculo"), // Testing alternativeLinks() for later usage
   'Habilidades y valores VI':alternativeLinks("habilidades"),
@@ -123,29 +122,25 @@ function alternativeLinks(subject) {
   }
 }
 
-// This could be further optimized... 
 
-function testColor() {
-  document.getElementById("textoPrueba").style.color = "#ffffff" 
+
+/*
+  baseLink = "https://tecmilenio.zoom.us/j/";
+  today = new Date().getDay(); 
+  if (subject == "calculo" ) { 
+    if (today == 2) { // if tuesday 
+      return (baseLink + "85729129549");
+    }
+    return (baseLink + "83093002223"); 
+  }
 }
+  if (subject == "habilidades" && new Date().getDay() == 3) {
+    if (today == 3) {
+    return (baseLink + "83383020209")
+    }
+  }
 
-function setColorButtonsSchedule() {
-  /*
-  const art = document.getDocumentById("sem6_art");
-  const calculo = document.getDocumentById("sem6_calculus");
-  const habilidades = document.getDocumentById("sem6_habilidades");
-  const mexico = document.getDocumentById("sem6_mexico");
-  const pensamiento = document.getDocumentById("sem6_philosophy");
-  const scientific = document.getDocumentById("sem6_scientific"); */
-
-  document.getElementById("sem6_art").style.backgroundColor = "#FF99FF"
-  document.getElementById("sem6_calculus").style.backgroundColor = "#FFFF66"
-  document.getElementById("sem6_habilidades").style.backgroundColor = "#99FFCD"
-  document.getElementById("sem6_mexico").style.backgroundColor = "#FD6699"
-  document.getElementById("sem6_philosophy").style.backgroundColor = "#CC99FE"
-  document.getElementById("sem6_scientific").style.backgroundColor = "#70AC46"
-}
-
+*/
 
 /**
  * Procedure to initialize the event listener on the Zoom link buttons.

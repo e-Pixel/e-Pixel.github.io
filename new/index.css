@@ -1,0 +1,206 @@
+@import "base.css";
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+body {
+	margin: 1em auto;
+	
+	max-width: 45em;
+	background-color: #212F3D;
+	font-family: Inter, Lato, Arial;
+}
+
+
+#artLink:hover {
+	content:url("assets/imgLinks/hover/artHover.svg");
+	background-color: #f1f1f1;
+}
+
+#sem6_calculus:hover {
+	content: url("assets/imgLinks/hover/calculoHover.svg");
+}
+
+#sem6_habilidades:hover {
+	content: url("assets/imgLinks/hover/habilidadesHover.svg");
+}
+
+#sem6_philosophy:hover {
+	content: url("assets/imgLinks/hover/pensamientoHover.svg")
+}
+
+#scientificLink:hover {
+	content: url("assets/imgLinks/hover/scientificHover.svg")
+}
+
+#sem6_mexico:hover {
+	content: url("assets/imgLinks/hover/mexicoHover.svg")
+}
+
+#sistemasLink:hover {
+	content: url("assets/optativeClasses/hover/sistemaHover.svg")
+}
+
+#escenariosLink:hover {
+	content: url("assets/optativeClasses/hover/escenarioHover.svg")
+}
+
+#negociosLink:hover {
+	content: url("assets/optativeClasses/hover/negociosHover.svg")
+}
+
+#cienciasLink:hover {
+	content: url("assets/optativeClasses/hover/cienciasHover.svg")
+}
+
+#bienestarLink:hover {
+	content: url("assets/optativeClasses/hover/bienestarHover.svg")
+}
+
+
+.elements {
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.button {
+	display: block;
+}
+
+.classButton {
+	cursor: pointer;
+	font-weight: bold;
+	margin-left: -10%;
+
+}
+
+#schedule {
+	margin-left: -10%;
+	max-width: 150%;
+	height: auto;
+}
+
+
+/* ANUNCIOS PRE-LINKS*/
+
+h2 { /*For subtitle ("Feliz Fin de Semana")*/
+	color: #fd5285;
+	font-style: italic;
+}
+
+/* LINKS */
+
+h3 {
+	color: white;
+	margin-left: -10%;
+}
+
+.opt {
+	font-style: italic;
+}
+
+.signature {
+	font-size:10px;
+	color: white;
+}
+::selection {
+	background:#0f4c81;
+	color: white; 
+}
+a:visited {
+	color: white; 
+}
+
+
+.rcorners1 {
+	border-radius: 25px;
+	background: #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+	margin: auto; 
+  }
+
+/* #aviso {
+	display: block;
+	border-radius: 25px;
+	background: #73AD21;
+	padding: 20px; 
+	width: 200px;
+	height: 150px; 
+	margin: 0 auto;
+}
+
+#okayButton { 
+	margin: 0;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+} */
+
+ /* Dropdown Button */
+ .dropbtn {
+	background-color: #AB47BC;
+	color: white;
+	padding: 16px 16px;
+	font-size: 16px;
+	border: none;
+	margin:0;
+
+	display:table;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover { background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content { display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #2196F3;}
+
+.vis {
+	/* This is to mark classes that we've already had*/
+	color: black;
+}
+
+p {
+	margin-bottom: 0.8em;
+}
+
+@media print {
+	body {
+	  max-width: none;
+	}
+}
