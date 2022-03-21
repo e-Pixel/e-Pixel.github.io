@@ -5,6 +5,7 @@
  * @param {string} url The full path to the API resource.
  * @param {string} method The HTTP verb that will be used to make the request.
  * @returns {Promise<Response>} The Response object.
+ * 
  */
 function get(url) {
   return fetch(url, {
@@ -12,6 +13,13 @@ function get(url) {
   });
 }
 
+// HTML Direct Functions
+
+function changeImageClick(id, next) {
+  document.getElementById(id).src = (next + ".png");
+  print(":)")
+
+}
 function openInNewTab(url) {
   window.open(url, '_blank').focus();
  }
@@ -121,26 +129,6 @@ function alternativeLinks(subject) {
         return (baseLink + "89838452310") 
   }
 }
-
-
-
-/*
-  baseLink = "https://tecmilenio.zoom.us/j/";
-  today = new Date().getDay(); 
-  if (subject == "calculo" ) { 
-    if (today == 2) { // if tuesday 
-      return (baseLink + "85729129549");
-    }
-    return (baseLink + "83093002223"); 
-  }
-}
-  if (subject == "habilidades" && new Date().getDay() == 3) {
-    if (today == 3) {
-    return (baseLink + "83383020209")
-    }
-  }
-
-*/
 
 /**
  * Procedure to initialize the event listener on the Zoom link buttons.

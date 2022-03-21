@@ -14,36 +14,36 @@ body {
 	font-family: Inter, Lato, Arial;
 }
 
-
+/*
 #artLink:hover {
-	content:url("assets/imgLinks/hover/artHover.svg");
+	content:url("assets/imgLinks/hover/artHover.png");
 	background-color: #f1f1f1;
 }
 
 #sem6_calculus:hover {
-	content: url("assets/imgLinks/hover/calculoHover.svg");
+	content: url("assets/imgLinks/hover/calculoHover.png");
 }
 
 #sem6_habilidades:hover {
-	content: url("assets/imgLinks/hover/habilidadesHover.svg");
+	content: url("assets/imgLinks/hover/habilidadesHover.png");
 }
 
 #sem6_philosophy:hover {
-	content: url("assets/imgLinks/hover/pensamientoHover.svg")
+	content: url("assets/imgLinks/hover/pensamientoHover.png")
 }
 
 #scientificLink:hover {
-	content: url("assets/imgLinks/hover/scientificHover.svg")
+	content: url("assets/imgLinks/hover/scientificHover.png")
 }
 
 #sem6_mexico:hover {
-	content: url("assets/imgLinks/hover/mexicoHover.svg")
+	content: url("assets/imgLinks/hover/mexicoHover.png")
 }
-
+*/
 #sistemasLink:hover {
 	content: url("assets/optativeClasses/hover/sistemaHover.svg")
 }
-
+ 
 #escenariosLink:hover {
 	content: url("assets/optativeClasses/hover/escenarioHover.svg")
 }

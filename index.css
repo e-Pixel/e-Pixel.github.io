@@ -14,6 +14,12 @@ body {
 	font-family: Lato, Arial;
 }
 
+#parcialTemp {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .elements {
 	margin-left: auto;
 	margin-right: auto; 

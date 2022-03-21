@@ -5,12 +5,14 @@
  * @param {string} url The full path to the API resource.
  * @param {string} method The HTTP verb that will be used to make the request.
  * @returns {Promise<Response>} The Response object.
+ * 
  */
 function get(url) {
   return fetch(url, {
     method: 'GET',
   });
 }
+// HTML Direct Functions
 
 function openInNewTab(url) {
   console.log("Opening new tab...")
@@ -113,8 +115,6 @@ function alternativeLinks(subject) {
           return (baseLink + "83383020209")
         }
         return (baseLink + "86867178711")
-      
-        
     case "scientific":
         if (today == 3) {
           return (baseLink + "81032993327")
@@ -138,14 +138,13 @@ function setColorButtonsSchedule() {
   const pensamiento = document.getDocumentById("sem6_philosophy");
   const scientific = document.getDocumentById("sem6_scientific"); */
 
-  document.getElementById("sem6_art").style.backgroundColor = "#FF99FF"
+  document.getElementById("sem6_art_and_culture").style.backgroundColor = "#FF99FF"
   document.getElementById("sem6_calculus").style.backgroundColor = "#FFFF66"
   document.getElementById("sem6_habilidades").style.backgroundColor = "#99FFCD"
   document.getElementById("sem6_mexico").style.backgroundColor = "#FD6699"
   document.getElementById("sem6_philosophy").style.backgroundColor = "#CC99FE"
   document.getElementById("sem6_scientific").style.backgroundColor = "#70AC46"
 }
-
 
 /**
  * Procedure to initialize the event listener on the Zoom link buttons.
@@ -205,7 +204,6 @@ function initializeClassButtons(className) {
     image.style.display = 'contents';
   }
 }
-
 window.onload = function() {
   initializeClassButtons('classButton');
   messageInWeekends(new Date().getDay());
