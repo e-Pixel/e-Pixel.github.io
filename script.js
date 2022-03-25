@@ -91,7 +91,7 @@ function expandCourseCode(courseCode) {
 
 
 const emergencyLinks = { // This dict is used in case there is no event (zoom link) found in canvas calendar 
-  'Art and culture': "https://itesm.zoom.us/j/6366890099",
+  'Art and culture': "https://tecmilenio.zoom.us/j/89913605756",
   'Cálculo integral':alternativeLinks("calculo"), // Testing alternativeLinks() for later usage
   'Habilidades y valores VI':alternativeLinks("habilidades"),
   'México en el siglo XXI':'https://tecmilenio.zoom.us/j/81851303071',
