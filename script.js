@@ -120,7 +120,7 @@ function alternativeLinks(subject) {
           return (baseLink + "81032993327")
         }
         return (baseLink + "89838452310") 
-  }
+      }
 }
 
 // This could be further optimized... 
@@ -144,6 +144,7 @@ function setColorButtonsSchedule() {
   document.getElementById("sem6_mexico").style.backgroundColor = "#FD6699"
   document.getElementById("sem6_philosophy").style.backgroundColor = "#CC99FE"
   document.getElementById("sem6_scientific").style.backgroundColor = "#70AC46"
+  document.getElementById("sem6_calculus_extra").style.backgroundColor = "#FFFF66"
 }
 
 /**
@@ -158,7 +159,7 @@ function initializeClassButtons(className) {
   for (var i = 0; i < list.length; i++) {
     list[i].addEventListener("click", async function (e) {
       const loading = document.getElementById("loading");
-      loading.style.display = 'contents';
+      loading.style.display = 'none'; // later change to 'content'
       e.preventDefault();
       try {
         const resp = await zoomlinkForToday('604', this.id);
