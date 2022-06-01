@@ -96,37 +96,37 @@ function expandCourseCode(courseCode) {
 
 
 const emergencyLinks = {
-  'Art and culture': "https://itesm.zoom.us/j/6366890099",
+  'Art and culture': "placeholder",
   'Cálculo integral':alternativeLinks("calculo"), // Testing alternativeLinks() for later usage
   'Habilidades y valores VI':alternativeLinks("habilidades"),
-  'México en el siglo XXI':'https://tecmilenio.zoom.us/j/81851303071',
-  'Pensamiento filosófico':'https://us02web.zoom.us/j/89245565159',
-  'Scientific thought':'https://itesm.zoom.us/j/87168417185'
+  'México en el siglo XXI':'placeholder',
+  'Pensamiento filosófico':'placeholder',
+  'Scientific thought':'placeholder'
 }
 
 function alternativeLinks(subject) {
-  baseLink = "https://tecmilenio.zoom.us/j/";
+  baseLink = "placeholder/";
   today = new Date().getDay(); 
 
   switch (subject) {
     case "calculo":
         if (today == 2) { // tuesday
-          return (baseLink + "85729129549")
+          return (baseLink + "placeholder")
         }
-        return (baseLink + "83093002223")
+        return (baseLink + "placeholder")
 
     case "habilidades" :
         if (today == 3) { // wednesday
-          return (baseLink + "83383020209")
+          return (baseLink + "placeholder")
         }
-        return (baseLink + "86867178711")
+        return (baseLink + "placeholder")
       
         
     case "scientific":
         if (today == 3) {
-          return (baseLink + "81032993327")
+          return (baseLink + "placeholder")
         }
-        return (baseLink + "89838452310") 
+        return (baseLink + "placeholder") 
   }
 }
 
